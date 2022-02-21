@@ -7,6 +7,7 @@ name = "fizzbuzz"
 version = "0.1.0"
 dependencies = [
  "itoap",
+ "libc",
 ]
 
 [[package]]
@@ -14,3 +15,9 @@ name = "itoap"
 version = "0.1.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "22ff16bae486bcc1443ddbf7fa93d21dbe638f0b96d141bf7e8c37e311e75777"
+
+[[package]]
+name = "libc"
+version = "0.2.119"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "1bf2e165bb3457c8e098ea76f3e3bc9db55f87aa90d52d0e6be741470916aaa4"
