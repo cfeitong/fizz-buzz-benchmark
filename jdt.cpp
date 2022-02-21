@@ -107,7 +107,8 @@ void task(worker* w)
 
 int main() 
 {
-    size_t workercount = std::thread::hardware_concurrency();
+    // size_t workercount = std::thread::hardware_concurrency();
+    size_t workercount = 1;
     size_t workersize = 10000000;
 
     // create workers
