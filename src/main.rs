@@ -1,19 +1,16 @@
 #![allow(dead_code)]
 
-mod aiden4;
 use std::io::{BufWriter, Write};
 
 fn main() {
-    // aiden4::run().unwrap();
     // big_num();
-    // trivial_algo();
-    just_print_libc();
+    trivial_algo();
 }
 
 fn just_print_libc() {
     let buf = [b'A'; 64 * 1024];
     loop {
-        let mut buf_ptr = buf.as_slice();
+        let mut buf_ptr = buf.as_ref();
         unsafe {
             while !buf_ptr.is_empty() {
                 let writen = libc::write(1, buf.as_ptr() as _, buf.len()) as usize;
